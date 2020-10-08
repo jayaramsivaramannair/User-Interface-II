@@ -68,13 +68,17 @@ header {
     margin: 50px 100px;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-end;
+    align-items: center;
 }
 
 .description h2 {
-    padding-left: 5px;
+    align-self: flex-start;
+    padding: 10px;
     width: 60px;
-    border: 2px solid white;
+    border: 2px solid #ed4c67;
+    color: white;
+    border-radius: 50%;
 }
 
 .job-id {
@@ -98,25 +102,30 @@ header {
     text-align: center;
 }
 
-.description a {
+.description div {
+    margin: 20px;
+}
+
+.description div a {
     text-decoration: none;
     color: white;
     border: 3px solid;
     background-color: #ED4C67;
     border-radius: 20px;
-    width: 150px;
-    padding-left: 10px;
-    align-self: center;
+    width: 200px;
+    padding: 5px;
 }
 
 section h2 {
-    padding-left: 5px;
+    padding: 10px;
     margin-top: 20px;
-    color: #ED4C67;
+    color: white;
     width: 110px;
     position: relative;
     left: 80px;
-    border: 2px solid white;
+    text-align: center;
+    border: 2px solid #ed4c67;
+    border-radius: 50%;
 }
 
 section .project-gallery {
@@ -158,18 +167,43 @@ footer h2 {
     border: 2px solid white;
 }
 
-.contact-info ul {
-    margin: 15px 0 15px 0;
+.contact-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact-me-button {
+    margin-top: 20px;
+}
+
+.contact-info .contact-me-button a {
+    text-decoration: none;
+    color: white;
+    border: 3px solid;
+    background-color: #ED4C67;
+    border-radius: 20px;
+    width: 200px;
+    padding: 5px;
+}
+
+.contact-info div {
+    margin: 20px 0 20px 0;
 }
 
 .contact-info ul li img {
-    width: 100px;
+    width: 40px;
     color: white;
     fill: currentColor;
 }
 
-.social-media-icons {
+footer .social-media-icons {
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
+    justify-content: space-around;
+}
+
+footer .social-media-icons li {
+    padding: 10px 50px;
 }
