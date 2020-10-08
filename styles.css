@@ -1,0 +1,18 @@
+/* CSS PROPERTIES FOR REUSE 
+font-color : #9980FA //Social Media Icons
+font-color: #ED4C67 //Headings & Body Text
+font-color: #1B1464 //Full Page Background
+
+font-style: Inconsolata //Body Text & Main Header
+font-style: Spartan //Body Text
+font-style: 
+*/
+
+/* CSS RESET */
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
