@@ -9,10 +9,167 @@ font-style:
 */
 
 /* CSS RESET */
-
-
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    background-color: #1B1464;
+}
+
+main {
+    margin: 0 auto;
+    
+}
+
+header .main-header h1 {
+    text-decoration: none;
+    font-weight: bold;
+    font-family: 'Spartan';
+    font-size: 50px;
+    color: #ED4C67;
+    font-size: 35px;
+    position: relative;
+    top: 30px;
+    left: 30px;
+}
+
+header {
+    border-bottom: 15px solid #FFC312;
+}
+
+.menu .menu-items {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+.menu-items > li {
+    position: relative;
+    right: 100px;
+    margin-right: 20px;
+}
+
+.menu-items li a {
+    text-decoration: none;
+    font-family: 'Inconsolata';
+    color: #ED4C67;
+}
+
+.menu-items li a:hover {
+    border-bottom: 5px ridge white;
+}
+
+.menu-items li:last-of-type {
+    margin-right: 0;
+}
+
+.description {
+    color: #ED4C67;
+    margin: 50px 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.description h2 {
+    padding-left: 5px;
+    width: 60px;
+    border: 2px solid white;
+}
+
+.job-id {
+    color: white;
+}
+
+.description p {
+    font-family: 'Spartan';
+    font-weight: bold;
+    font-size: 30px;
+    margin: 50px 0px;
+}
+
+.description > p {
+    position: relative;
+    top: 20px;
+    left: 20px;
+}
+
+.description p:last-of-type {
+    text-align: center;
+}
+
+.description a {
+    text-decoration: none;
+    color: white;
+    border: 3px solid;
+    background-color: #ED4C67;
+    border-radius: 20px;
+    width: 150px;
+    padding-left: 10px;
+    align-self: center;
+}
+
+section h2 {
+    padding-left: 5px;
+    margin-top: 20px;
+    color: #ED4C67;
+    width: 110px;
+    position: relative;
+    left: 80px;
+    border: 2px solid white;
+}
+
+section .project-gallery {
+    margin: 70px 0;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-evenly;
+
+}
+
+.projects {
+    display: flex;
+    flex-direction: column; 
+    margin-bottom: 30px;
+}
+
+.projects p {
+    margin-top: 10px;
+    text-align: center;
+    color: #ED4C67;
+}
+
+ul {
+    list-style-type: none;
+}
+
+.contact-info {
+    border-top: 15px solid #FFC312;
+}
+
+footer h2 {
+    padding-left: 5px;
+    margin-top: 20px;
+    color: #ED4C67;
+    width: 110px;
+    position: relative;
+    left: 80px;
+    border: 2px solid white;
+}
+
+.contact-info ul {
+    margin: 15px 0 15px 0;
+}
+
+.contact-info ul li img {
+    width: 100px;
+    color: white;
+    fill: currentColor;
+}
+
+.social-media-icons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
 }
