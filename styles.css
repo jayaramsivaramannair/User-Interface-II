@@ -1,0 +1,229 @@
+/* CSS PROPERTIES FOR REUSE 
+font-color : #9980FA //Social Media Icons
+font-color: #ED4C67 //Headings & Body Text
+font-color: #1B1464 //Full Page Background
+
+font-style: Inconsolata //Body Text & Main Header
+font-style: Spartan //Body Text
+font-style: 
+*/
+
+/* CSS RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* BODY / MAIN CONTAINER */
+main {
+    margin: 0 auto;
+    background-color: #1B1464;
+    
+}
+
+/* HEADER SECTION */
+
+header .main-header h1 {
+    text-decoration: none;
+    font-weight: bold;
+    font-family: 'Spartan';
+    font-size: 50px;
+    color: #EA2027;
+    font-size: 35px;
+    position: relative;
+    top: 30px;
+    left: 30px;
+}
+
+header {
+    border-bottom: 1px solid #FFC312;
+}
+
+/* NAVIGATION MENU */
+
+.menu .menu-items {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+.menu-items > li {
+    position: relative;
+    right: 100px;
+    margin-right: 20px;
+}
+
+.menu-items li a {
+    text-decoration: none;
+    font-family: 'Inconsolata';
+    color: #ED4C67;
+}
+
+.menu-items li a:hover {
+    border-bottom: 5px ridge white;
+}
+
+.menu-items li:last-of-type {
+    margin-right: 0;
+}
+
+/* ABOUT SECTION IN HEADER */
+.description {
+    color: #ED4C67;
+    margin: 50px 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.description h2 {
+    align-self: flex-start;
+    padding: 10px;
+    width: 60px;
+    border: 2px solid #ed4c67;
+    color: white;
+    border-radius: 50%;
+}
+
+.job-id {
+    color: white;
+}
+
+.description p {
+    font-family: 'Spartan';
+    font-weight: bold;
+    font-size: 30px;
+    margin: 50px 0px;
+}
+
+.description > p {
+    position: relative;
+    top: 20px;
+    left: 20px;
+}
+
+.description p:last-of-type {
+    text-align: center;
+}
+
+.description div {
+    margin: 20px;
+}
+
+.description div a {
+    text-decoration: none;
+    color: white;
+    border: 3px solid;
+    background-color: #ED4C67;
+    border-radius: 20px;
+    width: 200px;
+    padding: 5px;
+}
+
+/* PROJECT GALLERY SECTION */
+
+section h2 {
+    padding: 10px;
+    margin-top: 20px;
+    color: white;
+    width: 110px;
+    position: relative;
+    left: 80px;
+    text-align: center;
+    border: 2px solid #ed4c67;
+    border-radius: 50%;
+}
+
+section .project-gallery {
+    margin: 40px 0;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-evenly;
+
+}
+
+.projects {
+    display: flex;
+    flex-direction: column; 
+    margin-bottom: 30px;
+}
+
+.projects p {
+    margin-top: 10px;
+    text-align: center;
+    color: #ED4C67;
+}
+
+/* FOOTER SECTION */
+
+ul {
+    list-style-type: none;
+}
+
+.contact-info {
+    border-top: 1px solid #FFC312;
+}
+
+footer h2 {
+    padding-left: 5px;
+    margin-top: 20px;
+    color: #ED4C67;
+    width: 110px;
+    position: relative;
+    left: 80px;
+    border: 2px solid white;
+}
+
+.contact-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact-me-button {
+    margin-top: 20px;
+}
+
+.contact-info .contact-me-button a {
+    text-decoration: none;
+    color: white;
+    border: 3px solid;
+    background-color: #ED4C67;
+    border-radius: 20px;
+    width: 200px;
+    padding: 5px;
+}
+
+.contact-info div {
+    margin: 20px 0 20px 0;
+}
+
+.contact-info ul li img {
+    width: 40px;
+    color: white;
+    fill: currentColor;
+}
+
+footer .social-media-icons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+footer .social-media-icons li {
+    padding: 10px 50px;
+}
+
+/* FORMAT FOR ICON ATTRIBUTION LINK */
+
+footer div:last-of-type {
+    color: #ED4C67;
+}
+
+footer div a {
+    color: #ED4C67;
+}
