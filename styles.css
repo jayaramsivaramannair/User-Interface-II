@@ -116,6 +116,12 @@ span {
     padding: 20px;
 }
 
+.project-gallery .projects {
+    flex-direction: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
 .project-gallery .projects p {
     text-align: center;
     font-family: spartan;
