@@ -137,7 +137,7 @@ section h2 {
 }
 
 section .project-gallery {
-    margin: 70px 0;
+    margin: 40px 0;
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
