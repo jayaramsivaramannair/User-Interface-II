@@ -23,7 +23,8 @@ html {
 .container {
     max-width: 960px;
     margin:  1rem auto;
-    background-color: #1B1464;
+    background-color:#c7ecee;
+    padding: 0 0.75em;
 }
 
 /* MAIN HEADER */
@@ -34,7 +35,7 @@ header h1 {
     font-family: 'Spartan', Arial, Helvetica, sans-serif;
     font-size: 3em;
     font-weight: bold;
-    color: #EA2027;
+    color: #130f40;
 }
 
 /* NAVIGATION */
@@ -48,13 +49,13 @@ header .menu{
 .menu a {
     text-decoration: none;
     font-family: 'Inconsolata', Arial, Helvetica, sans-serif;
-    color: #ED4C67;
+    color: #130f40;
     padding: 0 1em;
     font-size: 1.2em
 }
 
 .menu a:hover {
-    border-bottom: 2px solid #9980FA;
+    border-bottom: 2px solid #353b48;
 }
 
 /* SECTION-DESCRIPTION */
@@ -63,8 +64,8 @@ header .menu{
     padding: 1.5em 1.5em;
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
-    color: #ED4C67;
+    align-items: center;
+    color: #130f40;
 }
 
 .description div {
@@ -78,13 +79,13 @@ header .menu{
 }
 
 span {
-    color: white;
+    color: #1e272e;
 }
 
 .description .work-button {
     align-self: center;
-    border: 2px solid #9980FA;
-    background-color: #EA2027;
+    border: 2px solid #353b48;
+    background-color: #130f40;
     border-radius: 50px;
 }
 
@@ -100,11 +101,11 @@ span {
 .showcase h2 {
     padding: 0.4em 0;
     margin: 0 2em;
-    color: #ED4C67;
+    color: #130f40;
     text-align: center;
-    border: 2px solid #9980FA;
+    border: 2px solid #353b48;
     border-radius: 25px;
-    text-decoration-color: #9980FA;
+    text-decoration-color: #353b48;
 }
 
 .project-gallery {
@@ -127,7 +128,7 @@ span {
 .project-gallery .projects p {
     text-align: center;
     font-family: spartan;
-    color: #ED4C67;
+    color: #130f40;
     padding: 1em;
     font-size: 1.2em;
 }
@@ -152,8 +153,8 @@ footer .contact-me-button a {
 }
 
 .contact-info .contact-me-button {
-    background-color: #EA2027;
-    border: 2px solid #9980FA;
+    background-color: #130f40;
+    border: 2px solid #353b48;
 }
 
 .contact-info .contact-me-button {
@@ -178,15 +179,19 @@ footer .social-media-icons a img {
 }
 
 footer div:last-of-type {
-    color: #EA2027;
+    color: #130f40;
     align-self: center;
 }
 
 footer div:last-of-type a {
-    color: #009432
+    color: #ff652f
 }
 
 @media all and (max-width : 800px) {
+
+    header h1 {
+        width: 90%;
+    }
     .project-gallery {
         flex-direction: column;
         align-items: center;
@@ -210,21 +215,20 @@ footer div:last-of-type a {
 
     .menu a {
         padding: 0.75em 0;
-        border: 2px dashed #9980FA;
+        border: 2px dashed #353b48;
         border-radius: 25px;
         width: 30%;
         margin: 0.5em;
         text-align: center;
     }
 
-    .contact-info .contact-me-button {
-        align-self: center;
-        border-radius: 25px;
+    .description p {
+        font-size: 1 em;
     }
 
-    .social-media-icons {
-        flex-direction: column;
-        align-items: center;
+    .contact-info .contact-me-button {
+        align-self: flex-start;
+        border: none;
     }
 
 }
