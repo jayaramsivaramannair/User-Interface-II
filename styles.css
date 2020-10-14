@@ -29,6 +29,8 @@ html {
 /* MAIN HEADER */
 
 header h1 {
+    position: relative;
+    left: 0.75em;
     font-family: 'Spartan', Arial, Helvetica, sans-serif;
     font-size: 3em;
     font-weight: bold;
@@ -58,10 +60,10 @@ header .menu{
 /* SECTION-DESCRIPTION */
 
 .description {
-    padding: 1.5em 0;
+    padding: 1.5em 1.5em;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: flex-start;
     color: #ED4C67;
 }
 
@@ -80,14 +82,15 @@ span {
 }
 
 .description .work-button {
+    align-self: center;
     border: 2px solid #9980FA;
     background-color: #EA2027;
-    padding: 5px;
     border-radius: 50px;
 }
 
 .description .work-button a {
     text-decoration: none;
+    padding: 1em;
     color: white;
     
 }
@@ -96,6 +99,7 @@ span {
 
 .showcase h2 {
     padding: 0.4em 0;
+    margin: 0 2em;
     color: #ED4C67;
     text-align: center;
     border: 2px solid #9980FA;
@@ -108,11 +112,12 @@ span {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
-    padding: 1.5em;
+    padding: 2.0em;
 }
 
 .project-gallery .projects {
-    width: 45%;
+    padding: 1.5em;
+    width: 50%;
 }
 
 .project-gallery .projects img {
@@ -124,6 +129,7 @@ span {
     font-family: spartan;
     color: #ED4C67;
     padding: 1em;
+    font-size: 1.2em;
 }
 
 /* FOOTER */
@@ -131,14 +137,19 @@ span {
 footer {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    padding: 1.2em 0;
+    justify-content: space-around;
+    padding: 1.2em 1.5em;
+}
+
+footer .contact-me-button {
+    align-self: flex-end;
 }
 
 footer .contact-me-button a {
     text-decoration: none;
     color: white;
     padding: 1em;
+    text-align: center;
 }
 
 .contact-info .contact-me-button {
@@ -149,6 +160,7 @@ footer .contact-me-button a {
 
 .contact-info .contact-me-button {
     font-size: 1.2em;
+    width:
 }
 
 .social-media-icons {
@@ -165,13 +177,52 @@ footer .contact-me-button a {
 }
 
 footer .social-media-icons a img {
-    width: 75%;
+    width: 50%;
 }
 
 footer div:last-of-type {
     color: #EA2027;
+    align-self: center;
 }
 
 footer div:last-of-type a {
     color: #009432
+}
+
+@media all and (max-width : 800px) {
+    .project-gallery {
+        flex-direction: column;
+        align-items: center;
+        padding: 1.5em;
+    }
+
+    .project-gallery .projects {
+        width: 100%;
+        border: 5px dashed red;
+    }
+}
+
+@media all and (max-width: 500px) {
+    header .menu {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .menu a {
+        padding: 0.75em 0;
+    }
+
+    .contact-info .contact-me-button {
+        align-self: center;
+    }
+
+    .social-media-icons {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    footer .social-media-icons a img {
+        width: 100%;
+    }
+
 }
