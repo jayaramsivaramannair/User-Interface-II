@@ -174,7 +174,7 @@ footer .contact-me-button a {
 }
 
 footer .social-media-icons a img {
-    width: 50%;
+    width: 100%;
 }
 
 footer div:last-of-type {
@@ -238,6 +238,10 @@ footer div:last-of-type a {
     .contact-info .contact-me-button {
         align-self: flex-start;
         border: none;
+    }
+
+    footer .social-media-icons a img {
+        width: 75%;
     }
 
     footer div:last-of-type {
