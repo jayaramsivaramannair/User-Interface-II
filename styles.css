@@ -240,6 +240,11 @@ footer div:last-of-type a {
         border: none;
     }
 
+    .social-media-icons {
+        flex-direction: column;
+        align-items: center;
+    }
+
     footer .social-media-icons a img {
         width: 75%;
     }
