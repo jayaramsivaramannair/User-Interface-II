@@ -1,0 +1,251 @@
+/* CSS PROPERTIES FOR REUSE 
+font-color : #9980FA //Social Media Icons
+font-color: #ED4C67 //Headings & Body Text
+font-color: #1B1464 //Full Page Background
+
+font-style: Inconsolata //Body Text & Main Header
+font-style: Spartan //Body Text
+font-style: 
+*/
+
+/* CSS RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 16px;
+}
+
+/* BODY / MAIN CONTAINER */
+.container {
+    max-width: 960px;
+    margin:  1rem auto;
+    background-color:#c7ecee;
+}
+
+/* MAIN HEADER */
+
+header {
+    border-bottom: 5px groove black;
+}
+
+header h1 {
+    position: relative;
+    left: 0.75em;
+    font-family: 'Spartan', Arial, Helvetica, sans-serif;
+    font-size: 3em;
+    font-weight: bold;
+    color: #130f40;
+}
+
+/* NAVIGATION */
+
+header .menu{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+.menu a {
+    text-decoration: none;
+    font-family: 'Inconsolata', Arial, Helvetica, sans-serif;
+    color: #130f40;
+    padding: 1em 1em;
+    font-size: 1.2em
+}
+
+/* SECTION-DESCRIPTION */
+
+.description {
+    padding: 1.5em 1.5em;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    color: #130f40;
+}
+
+.description div {
+    margin: 0.625em 0;
+}
+
+.description p {
+    padding: 0.625em 0;
+    font-family: spartan;
+    font-size: 1.5em;
+}
+
+span {
+    color: #1e272e;
+}
+
+.description .work-button {
+    align-self: center;
+    border: 2px solid #353b48;
+    background-color: #130f40;
+    border-radius: 50px;
+}
+
+.description .work-button a {
+    text-decoration: none;
+    padding: 1em;
+    color: white;
+    
+}
+
+/* PROJECT SHOWCASE */
+
+.showcase h2 {
+    padding: 0.4em 0;
+    margin: 0 2em;
+    color: #130f40;
+    text-align: center;
+    border-bottom: 2px solid #353b48;
+    text-decoration-color: #353b48;
+}
+
+.project-gallery {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding: 2.0em;
+}
+
+.project-gallery .projects {
+    padding: 1.5em;
+    width: 50%;
+}
+
+.project-gallery .projects img {
+    max-width: 100%;
+}
+
+.project-gallery .projects p {
+    text-align: center;
+    font-family: spartan;
+    color: #130f40;
+    padding: 1em;
+    font-size: 1.2em;
+}
+
+/* FOOTER */
+
+footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 1.2em 1.5em;
+    border-top: 5px groove black;
+}
+
+footer .contact-me-button {
+    align-self: center;
+}
+
+footer .contact-me-button a {
+    text-decoration: none;
+    color: white;
+    padding: 1em;
+}
+
+.contact-info .contact-me-button {
+    background-color: #130f40;
+    border: 2px solid #353b48;
+}
+
+.contact-info .contact-me-button {
+    font-size: 1.2em;
+}
+
+.social-media-icons {
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 100%;
+    margin: 1.0em auto;
+}
+
+.social-media-icons div {
+    padding: 1.2em 0;
+}
+
+footer .social-media-icons a img {
+    width: 100%;
+}
+
+footer div:last-of-type {
+    color: #130f40;
+    align-self: center;
+}
+
+footer div:last-of-type a {
+    color: #ff652f
+}
+
+@media all and (max-width : 800px) {
+
+    header h1 {
+        width: 90%;
+    }
+    .project-gallery {
+        flex-direction: column;
+        align-items: center;
+        padding: 1.5em;
+    }
+
+    .project-gallery .projects {
+        width: 100%;
+    }
+}
+
+@media all and (max-width: 500px) {
+    header h1 {
+        font-size: 1.5em;
+    }
+
+    header .menu {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .menu a {
+        padding: 0.75em 0;
+        border: 2px dashed #353b48;
+        border-radius: 25px;
+        width: 30%;
+        margin: 0.5em;
+        text-align: center;
+        font-size: 1em;
+    }
+
+    .description div p {
+        font-size: 1em;
+        text-align: center;
+    }
+
+    .showcase h2 {
+        font-size: 0.8em;
+    }
+
+    .project-gallery .projects p {
+        font-size: 0.6em;
+    }
+
+    .contact-info .contact-me-button {
+        align-self: flex-start;
+        border: none;
+    }
+
+    footer .social-media-icons a img {
+        width: 75%;
+    }
+
+    footer div:last-of-type {
+        font-size: 0.8em;
+    }
+
+}
