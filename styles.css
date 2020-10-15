@@ -57,6 +57,12 @@ header .menu{
     font-size: 1.2em
 }
 
+.menu a:hover {
+    border: 2px solid #353b48;
+    background-color: #130f40;
+    color: white;
+}
+
 /* SECTION-DESCRIPTION */
 
 .description {
@@ -169,21 +175,16 @@ footer .contact-me-button a {
     margin: 1.0em auto;
 }
 
-.social-media-icons div {
-    padding: 1.2em 0;
-}
-
-footer .social-media-icons a img {
-    width: 100%;
-}
-
-footer div:last-of-type {
+.social-media-icons a {
+    text-decoration: none;
     color: #130f40;
-    align-self: center;
+    font-size: 1.2em;
 }
 
-footer div:last-of-type a {
-    color: #ff652f
+.social-media-icons a:hover {
+    border: 2px solid #353b48;
+    background-color: #130f40;
+    color: white;
 }
 
 @media all and (max-width : 800px) {
@@ -222,6 +223,11 @@ footer div:last-of-type a {
         font-size: 1em;
     }
 
+    .menu a:hover {
+        background-color: #130f40;
+        color: white;
+    }
+
     .description div p {
         font-size: 1em;
         text-align: center;
@@ -238,19 +244,6 @@ footer div:last-of-type a {
     .contact-info .contact-me-button {
         align-self: flex-start;
         border: none;
-    }
-
-    .social-media-icons {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    footer .social-media-icons a img {
-        width: 75%;
-    }
-
-    footer div:last-of-type {
-        font-size: 0.8em;
     }
 
 }
